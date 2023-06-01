@@ -1,0 +1,28 @@
+.Navbar{
+    width:90%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    border:1px solid gray;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+.Navbar>div{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.Navbar > div:last-child{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 60px;
+}
+
+.Navbar > div:last-child>p:hover{
+    font-weight: bolder;
+    text-decoration: underline;
+}
