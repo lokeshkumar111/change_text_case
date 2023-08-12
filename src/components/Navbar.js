@@ -13,9 +13,6 @@ const Navbar = ({ mode, toggleMode }) => {
         <h3>TextUtils</h3>
       </div>
       <div>
-        <p>Home</p>
-        <p>About</p>
-        <p>Contact</p>
         <ToggleBtn onChangeMode={toggleMode} />
       </div>
     </div>

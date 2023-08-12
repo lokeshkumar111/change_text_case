@@ -3,9 +3,10 @@
     display:flex;
     flex-direction: row;
     justify-content: space-between;
+    gap:100px;
     text-align: center;
     margin: auto;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     /* border:1px solid gray; */
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
     border-radius: 5px;
@@ -18,25 +19,21 @@
     margin-left: 30px;
     margin-right: 30px;
 }
-.Navbar > div:last-child{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    gap: 60px;
-}
-
-.Navbar > div:last-child>p:hover{
-    font-weight: bolder;
-    text-decoration: underline;
-}
 
 .Navbar > div:last-child>button{
     border: none;
-    background-color: rgb(25, 25, 80);
-    color: white;
-    border-radius: 15px;
     margin-bottom: 10px;
     padding: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    .Navbar{
+        gap: 50px;
+    }
+}
+@media screen and (max-width: 380px){
+    .Navbar{
+        width: 115%;
+        justify-content: center;
+    }
 }

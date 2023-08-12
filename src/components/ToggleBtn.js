@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-
+import darkMode from './media/darkMode.png';
+import lightMode from './media/lightMode.png';
 function ToggleButton({ onChangeMode }) {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
@@ -10,7 +11,7 @@ function ToggleButton({ onChangeMode }) {
 
   return (
     <button onClick={handleToggle}>
-      {isDarkMode ? 'Dark Mode Enabled' : 'Light Mode Enabled'}
+      {isDarkMode ? <img style={{width:'40px'}} src={lightMode} alt="light"/> : <img style={{width:'40px'}} src={darkMode} alt="dark"/>}
     </button>
   );
 }

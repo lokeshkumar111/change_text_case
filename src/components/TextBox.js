@@ -53,19 +53,19 @@ const TextBox = ({ mode }) => {
 
   return (
     <div className={styles.TextBox} style={textBoxStyles}>
-      <textarea style={textAreaStyle}
+      <textarea className='textAreaStyle' style={textAreaStyle}
         name="Text1"
         cols="100"
         rows="10"
         onChange={handleOnChange}
         value={text}
       ></textarea>
-      <div style={textAreaButtonStyle}>
-        <button onClick={handleUpBtn}>Change to UpperCase</button>
-        <button onClick={handleLoBtn}>Change to LowerCase</button>
-        <button onClick={handleClBtn}>Clear</button>
-        <button onClick={handleCopyBtn}>Copy Text</button>
+      <div style={textAreaButtonStyle} className="textAreaButtonStyle">
+        <button onClick={handleUpBtn}>Change to UPPER CASE</button>
+        <button onClick={handleLoBtn}>Change to lower case</button>
         <button onClick={handleRemoveSpBtn}>Remove Extra Space</button>
+        <button onClick={handleCopyBtn}>Copy Text</button>
+        <button onClick={handleClBtn}>Clear</button>
       </div>
       <div>
         <h2>Your Text Summary</h2>
