@@ -10,7 +10,7 @@ const Navbar = ({ mode, toggleMode }) => {
   return (
     <div className={styles.Navbar} style={navbarStyles}>
       <div>
-        <h3>TextUtils</h3>
+        <h3>TextEdits</h3>
       </div>
       <div>
         <ToggleBtn onChangeMode={toggleMode} />

@@ -54,6 +54,7 @@ const TextBox = ({ mode }) => {
   return (
     <div className={styles.TextBox} style={textBoxStyles}>
       <textarea className='textAreaStyle' style={textAreaStyle}
+        placeholder="Enter your text here..."
         name="Text1"
         cols="100"
         rows="10"
